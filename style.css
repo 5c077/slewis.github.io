@@ -201,12 +201,13 @@ h2::after {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
 }
-
+/*
 .project-card {
     background: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: opacity 0.3s, transform 0.3s, box-shadow 0.3s;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -214,15 +215,43 @@ h2::after {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
+.projects-grid:hover .project-card {
+    opacity: 0.4;
+    transition: opacity 0.3s, transform 0.3s, box-shadow 0.3s;
+}
 
+.projects-grid:hover .project-card:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}*/
+.project-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: opacity 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition-delay: 0s;
+}
+
+.project-card:hover ~ .project-card {
+    opacity: 0.4;
+    transition: opacity 0.3s, transform 0.3s, box-shadow 0.3s;
+}
 .project-image {
     width: 95%;
-    height: 200px;
+    height: 225px;
     /*background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);*/
+    background: none;
     display: flex;
-    /*align-items: center;*/
+    align-items: center;
     justify-content: center;
-    color: rgb(255, 255, 255);
+    /*color: rgb(255, 255, 255);*/
     overflow: hidden;
     font-size: 5rem;
 }

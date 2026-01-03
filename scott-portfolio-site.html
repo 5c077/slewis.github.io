@@ -60,7 +60,7 @@
                 </div>
                 <div class="bio">
                     <h3>Professional Summary</h3>
-                    <p>Innovative and detail-oriented individual contributor with 10+ years of experience developing cutting-edge bioinformatics solutions for emerging NGS/HTS technologies. I earned a Ph.D. in Genetics & Genomics from Washington University School of Medicine and continuously hone extensive experience in computational biology, statistics, and machine learning. I specialize in translating complex biological data into actionable insights through advanced analytical workflows and custom software development.</p>
+                    <p>Innovative and detail-oriented individual contributor with 10+ years of experience developing cutting-edge bioinformatics solutions for emerging NGS/HTS technologies. I earned a Ph.D. in Biology & Biomedical Sciences (program in Genetics & Genomics) from Washington University School of Medicine and continuously hone extensive experience in computational biology, statistics, and machine learning. I specialize in translating complex biological data into actionable insights through advanced analytical workflows, custom software development, and transformative visualizations.</p>
                     
                     <p>My expertise spans single-cell RNA sequencing, spatial transcriptomics, epigenetic reprogramming, and high-performance computing. I have a proven track record of driving discovery among interdisciplinary teams, from academic research to consulting with enterprise clients and startups.</p>
 
@@ -142,23 +142,9 @@
                 </div>
 
                 <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="project-image">📊</div>
-                    <div class="project-content">
-                        <h3>ExpressionDB Platform</h3>
-                        <div class="journal">PLOS ONE, 2017</div>
-                        <p>Developed a scalable open-source platform for distributing, analyzing, and visualizing genome-scale datasets, enabling collaborative research across institutions.</p>
-                        <div class="project-tags">
-                            <span class="tag">Web Development</span>
-                            <span class="tag">Data Visualization</span>
-                            <span class="tag">Open Source</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-card">
-                    <div class="project-image">💪</div>
+               <div class="project-card">
+                    <!--<div class="project-image">💪</div>-->
+                    <div class="project-image"> <img class="project-image" src="assets/img/skeletalMusclefig.jpg" alt="description" style="width: 90%; height: 90%; object-fit: cover;"> </div>
                     <div class="project-content">
                         <h3>Skeletal Muscle Diversity</h3>
                         <div class="journal">eLife, 2018</div>
@@ -171,10 +157,27 @@
                     </div>
                 </div>
 
+                <!-- Project 5 -->
+                
+                 <div class="project-card">
+                    <!--<div class="project-image">📊</div>-->
+                    <div class="project-image"> <img class="project-image" src="assets/img/expressionDBfig.png" alt="description" style="width: 90%; height: 90%; "> </div>
+                    <div class="project-content">
+                        <h3>ExpressionDB Platform</h3>
+                        <div class="journal">PLOS ONE, 2017</div>
+                        <p>Developed a scalable open-source platform for distributing, analyzing, and visualizing genome-scale datasets, enabling collaborative research across institutions.</p>
+                        <div class="project-tags">
+                            <span class="tag">Web Development</span>
+                            <span class="tag">Data Visualization</span>
+                            <span class="tag">Open Source</span>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Project 6 -->
                 <div class="project-card">
                     <!-- <div class="project-image">⏰</div> -->
-                     <div class="project-image"> <img class="project-image" src="assets/img/jbr-guidelinesFigure.jpg" alt="description"> </div>
+                     <div class="project-image"> <img class="project-image" src="assets/img/jbr-guidelinesFigure.jpg" alt="description" style="width: 90%; height: 90%; "> </div>
                     <div class="project-content">
                         <h3>Circadian Rhythm Genomics</h3>
                         <div class="journal">Journal of Biological Rhythms, 2017</div>
@@ -200,7 +203,7 @@
                     <div class="period">Independent | Ongoing</div>
                     <p>Serving clientele across enterprise R&D, startups, and academic institutions, delivering cloud computing solutions with AWS for uniform NGS quality control and analysis workflows.</p>
                     <p>Provide bioinformatics and computational biology expertise to enterprise R&D teams, startups, and academic institutions across genomics, transcriptomics, and data analysis projects.</p>
-                    <p>Develop custom data acquisition and deployment strategies for scientific teams and executive leadership, translating technical requirements into scalable solutions/</p>
+                    <p>Develop custom data acquisition and deployment strategies for scientific teams and executive leadership, translating technical requirements into scalable solutions.</p>
                 </div>
                 <div class="timeline-item">
                     <h3>Predoctoral Researcher</h3>
@@ -283,6 +286,29 @@
             }
             
             lastScroll = currentScroll;
+        });
+                // Focus fade effect for project cards
+        const projectsGrid = document.querySelector('.projects-grid');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        projectCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                setTimeout(() => {
+                    if (this.matches(':hover')) {
+                        projectCards.forEach(otherCard => {
+                            if (otherCard !== this) {
+                                otherCard.style.opacity = '0.6';
+                            }
+                        });
+                    }
+                }, 1500);
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                projectCards.forEach(otherCard => {
+                    otherCard.style.opacity = '1';
+                });
+            });
         });
     </script>
 </body>
