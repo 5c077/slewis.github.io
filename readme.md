@@ -1,4 +1,4 @@
-# Scott Lewis (My Professional Website)
+# Scott Lewis (My Portfolio Website)
 
 A modern, responsive portfolio website showcasing expertise in bioinformatics, computational biology, and data science.
 
