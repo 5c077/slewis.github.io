@@ -78,9 +78,3 @@ Works on all modern browsers including:
 ## License
 
 © 2025 Scott Lewis. All rights reserved.
-
-## Contact
-
-- Email: ScottLewisPhD@gmail.com
-- LinkedIn: [linkedin.com/in/scott-lewis-0ab669290/](https://linkedin.com/in/scott-lewis-0ab669290/)
-- GitHub: [github.com/5c077](https://github.com/5c077)
