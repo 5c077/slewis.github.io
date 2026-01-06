@@ -73,7 +73,7 @@ Works on all modern browsers including:
 - Chrome/Edge (latest)
 - Firefox (latest)
 - Safari (latest)
-- Mobile browsers
+- Mobile enabled
 
 ## License
 
