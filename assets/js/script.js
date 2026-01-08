@@ -55,20 +55,35 @@ projectCards.forEach(card => {
 
 document.getElementById('email-link').addEventListener('click', function(e) {
     e.preventDefault();
+    if (typeof gtag !== 'undefined') {
+    gtag('event', 'contact', {
+        'event_category': 'engagement',
+        'event_label': 'email_c'
+    });}
     const user = 'ScottLewisPhD';
-    const user_ = 'decoy'
+    const user_ = '0ab669291267'
     const domain = 'gmail.com';
     window.location.href = 'mailto:' + user + '@' + domain;
 });
 document.getElementById('linkedin-link').addEventListener('click', function(e) {
     e.preventDefault();
-    const name_ = 'decoy';
+        if (typeof gtag !== 'undefined') {
+    gtag('event', 'contact', {
+        'event_category': 'engagement',
+        'event_label': 'linkedin_c'
+    });}
+    const name_ = '0ab669291267';
     const name = 'scott-lewis';
     const hash = '0ab669290' 
     window.open('https://www.linkedin.com/in/' + name + '-'+ hash + '/', '_blank');
 });
 document.getElementById('github-link').addEventListener('click', function(e) {
     e.preventDefault();
+        if (typeof gtag !== 'undefined') {
+    gtag('event', 'contact', {
+        'event_category': 'engagement',
+        'event_label': 'github_c'
+    });}
     const username = '5c077';
     window.open('https://github.com/' + username, '_blank');
 });
