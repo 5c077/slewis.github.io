@@ -411,6 +411,15 @@ footer a:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
+    nav .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    nav .logo {
+        font-size: 1.2rem;
+    }
+    
     nav ul {
         gap: 1rem;
         font-size: 0.9rem;
@@ -440,5 +449,4 @@ footer a:hover {
         flex-direction: column;
         align-items: center;
     }
-
 }
