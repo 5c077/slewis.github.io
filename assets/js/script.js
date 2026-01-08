@@ -11,7 +11,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
 // Add scroll effect to navigation
 let lastScroll = 0;
 const nav = document.querySelector('nav');
@@ -63,7 +62,6 @@ document.getElementById('github-link').addEventListener('click', function(e) {
     const username = '5c077';
     window.open('https://github.com/' + username, '_blank');
 });
-
 // Focus fade effect for project cards
 const projectsGrid = document.querySelector('.projects-grid');
 const projectCards = document.querySelectorAll('.project-card');
