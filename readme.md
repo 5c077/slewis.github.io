@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Portfolio website showcasing professional expertise and projects in bioinformatics, computational biology, and data science.
+My portfolio website showcasing professional expertise and projects in bioinformatics, computational biology, and data science.
 
 ## Features
 
